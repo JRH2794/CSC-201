@@ -7,10 +7,10 @@ public class HelloName {
 
        String name;
 
-       System.out.println("Please tell me your username: ");
+       System.out.println("Please tell me your username:");
        Scanner keyboard = new Scanner(System.in);
        name = keyboard.next();
-       System.out.println("Please tell me your password: ");
+       System.out.println("Please tell me your password:");
        System.out.println("Hello " + name + ", Welcome to CSC200 class! and Your password is " + keyboard.next() + "!");
 
    System.exit(0); } }
