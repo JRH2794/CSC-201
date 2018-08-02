@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-// Simple program to sell my hand bags offline, hence the price is of integer type because it's easier for cash.
+// Simple program to sell my hand bags offline.
 // It should print the receipt to a text file to print or email to them.
 
 public class BagShop extends HandBagPurchase {
@@ -17,22 +17,22 @@ public class BagShop extends HandBagPurchase {
 
         final HandBagPurchase newBag = new HandBagPurchase();
 
-        JPanel shopPanel = new JPanel(new GridLayout(2,0));
+            JPanel shopPanel = new JPanel(new GridLayout(2,0));
 
-        JLabel mothLabel = new JLabel("** Choose Transaction Type **");
-        mothLabel.setHorizontalAlignment(SwingConstants.CENTER);
+            JLabel mothLabel = new JLabel("** Choose Transaction Type **");
+            mothLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        shopPanel.setBackground(Color.cyan);
-        shopPanel.setSize(400, 850);
+            shopPanel.setBackground(Color.cyan);
+            shopPanel.setSize(400, 850);
 
         final JFrame bagFrame = new JFrame("March of the Hare");
-        bagFrame.pack();
-        bagFrame.setVisible(true);
-        bagFrame.setSize(400, 150);
-        bagFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+            bagFrame.pack();
+            bagFrame.setVisible(true);
+            bagFrame.setSize(400, 150);
+            bagFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        JButton smallBag = new JButton("Small Bag Purchase $35");
-        JButton bigBag = new JButton("Big Bag Purchase $45");
+            JButton smallBag = new JButton("Small Bag Purchase $35");
+            JButton bigBag = new JButton("Big Bag Purchase $45");
 
 
         JPanel bPan = new JPanel();
